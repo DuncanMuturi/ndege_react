@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
-
+import { Link } from "react-router-dom";
 const SignUp = () => {
   // create variable
 
@@ -100,6 +100,9 @@ const SignUp = () => {
           <br />
           <button className="btn btn-primary">Sign Up</button>
         </form>
+        <p>
+          Already have an account? <Link to="/signin"> Sign In</Link>
+        </p>
       </div>
     </div>
   );
